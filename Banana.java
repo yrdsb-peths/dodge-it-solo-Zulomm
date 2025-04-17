@@ -8,12 +8,21 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Banana extends Actor
 {
-    /**
-     * Act - do whatever the Banana wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    boolean top = true;
+    
     public void act()
     {
-        // Add your action code here.
+        if(Greenfoot.mouseClicked(null)){
+            top = !top;
+        }
+        
+        if(top) 
+        {
+            setLocation(100, 100);
+        }
+        else
+        {
+            setLocation(700, 100);
+        }
     }
 }
