@@ -20,6 +20,12 @@ public class Hit extends Actor
         {
             resetHit();
         }
+        if(isTouching(Me.class))
+        {
+            Dead dead = new Dead();
+            getWorld().addObject(deadm, 750, 500);
+            getWorld().removeObject(this);
+        }
     }
     
     public void resetHit()
