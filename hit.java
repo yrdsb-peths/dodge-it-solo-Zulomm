@@ -14,7 +14,7 @@ public class Hit extends Actor
      */
     public void act()
     {
-        move(-15);
+        move(-45);
         
         if(getX()<= 0)
         {
