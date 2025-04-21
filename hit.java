@@ -23,7 +23,7 @@ public class Hit extends Actor
         if(isTouching(Me.class))
         {
             Dead dead = new Dead();
-            getWorld().addObject(deadm, 750, 500);
+            getWorld().addObject(dead, 850, 500);
             getWorld().removeObject(this);
         }
     }
