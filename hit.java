@@ -14,6 +14,24 @@ public class Hit extends Actor
      */
     public void act()
     {
-        // Add your action code here.
+        move(-15);
+        
+        if(getX()<= 0)
+        {
+            resetHit();
+        }
+    }
+    
+    public void resetHit()
+    {
+        int num = Greenfoot.getRandomNumber(2);
+        if(num == 0)
+        {
+            setLocation(1500,200);
+        }
+        else
+        {
+            setLocation(1500,800);
+        }
     }
 }
